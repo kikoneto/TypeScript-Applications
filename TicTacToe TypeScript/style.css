@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+.game-container {
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    background-color: rgba(22, 21, 21, 0.79);
+    box-shadow: 0px 0px 100px #0d0c0c;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgb(243, 39, 90);
+}
+
+.restart-btn {
+    position: relative;
+    transform: translateX(6px) translateY(-11px);
+    width: 200px;
+    height: 40px;
+    border: 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px white;
+    transition: 0.5s all ease;
+}
+
+.restart-btn:hover {
+    position: relative;
+    width: 230px;
+    height: 50px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
