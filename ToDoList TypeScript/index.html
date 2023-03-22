@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script type="module" src="./dist/controlTask.js" defer></script>
+    <script type="module" src="./dist/addTask.js" defer></script>
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <div class="content">
+                <div class="header">
+                    <h1>Tasks to do:</h1>
+                    <i class="fa-regular fa-plus"></i>
+                </div>
+
+                <div class="task-list">
+                    <ul>
+                        <li>
+                            <h4>New Task</h4>
+                            <div class="hidden-info">d</div>
+                            <div class="buttons"><i class="fa-solid fa-check check-btn"></i><i
+                                    class="fa-solid fa-xmark del-btn"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="completed-container">
+
+            <div class="content">
+                <h1>Completed Tasks:</h1>
+                <div class="task-list">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="add-container hidden">
+        <div class="add-content">
+            <div class="add-header">
+                <h1>Add a Task</h1>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="add-form">
+                <input type="text" placeholder="title">
+                <input type="text" placeholder="additional info">
+            </div>
+            <div class="add-task">Add</div>
+        </div>
+    </div>
+</body>
+
+</html>
